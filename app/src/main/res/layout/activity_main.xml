@@ -50,7 +50,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="irMenuPrincipal"
+            android:onClick="irVentana2"
             android:text="Buscar Héroes" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
