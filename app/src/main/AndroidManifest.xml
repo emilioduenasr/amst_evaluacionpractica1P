@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.evaluacion_g6">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,10 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evaluacion_G6">
         <activity
-            android:name=".ventana3"
-            android:exported="false" />
-        <activity
-            android:name=".ventana2"
+            android:name=".ventana_resultados"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

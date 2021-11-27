@@ -5,25 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".MainActivity">
+
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="340dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txt_titulo"
             android:layout_width="match_parent"
-            android:layout_height="179dp"
+            android:layout_height="175dp"
             android:gravity="center"
             android:text="Aplicaciones Móviles y Servicios Telemáticos"
-            android:textSize="36sp" />
+            android:textSize="34sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txt_subtitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -31,26 +34,31 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txt_integrantes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#F6F6F6"
             android:gravity="center"
             android:text="Emilio Dueñas y Alfonso Enriquez"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tx_usuario"
+            android:id="@+id/txt_busqueda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:layout_marginTop="50dp"
             android:hint="Búsqueda por nombre"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_buscar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="irVentana2"
+            android:layout_marginTop="15dp"
+            android:onClick="irVentanaResultados"
             android:text="Buscar Héroes" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
