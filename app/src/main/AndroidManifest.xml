@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.evaluacion_g6">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.example.EX_AMST_G6">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evaluacion_G6">
         <activity
-            android:name=".ventana_resultados"
+            android:name="com.example.EX_AMST_G6.ventana_detalles"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.EX_AMST_G6.ventana_resultados"
+            android:exported="false" />
+        <activity
+            android:name="com.example.EX_AMST_G6.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

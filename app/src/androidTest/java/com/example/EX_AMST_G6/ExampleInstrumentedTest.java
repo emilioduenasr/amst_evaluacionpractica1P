@@ -1,4 +1,4 @@
-package com.example.evaluacion_g6;
+package com.example.EX_AMST_G6;
 
 import android.content.Context;
 
